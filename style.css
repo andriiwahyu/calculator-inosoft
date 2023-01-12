@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.display .sub-screen,.display .screen, .input {
+  font-family: 'Inter', sans-serif;
+
+}
+
+.app {
+    background-color: #18212a;
+    color: var(--dark);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.app .display {
+  background: #36474f;
+  border-radius: 0;
+}
+
+.app .display .screen {
+  font-size: 3.5em;
+}
+
+.app .display .sub-screen {
+  font-size: 1.75em;
+}
+
+.input {
+  height: 65px;
+  width: 65px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 1.5  em;
+}
+
+.input.operator {
+  background-color: #e5e5e5;
+}
+
+.input.equal {
+  background-color: #ff6531;
+}
+
+.input:active {
+  background-color: #1f252b;
+}
+
+.input.operator:active {
+  background-color: #bebebe;
+}
+
+.input.equal:active {
+  background-color: #e65a1c;
+}
+
+@media only screen and (min-width: 576px) {
+  .app {
+    width: 376px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 29px 7px rgba(0,0,0,0.24);
+    min-height: auto;
+  }
+
+  .app .display {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .app .display .sub-screen {
+    font-size: 1.25em;
+  }
+
+  .app .display .screen {
+    font-size: 2.25em;
+  }
+
+  .input {
+    font-size: 1em;
+    width: 50px;
+    height: 50px;
+  }
+
+}
